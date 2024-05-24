@@ -30,6 +30,7 @@ BuildRequires:	xz
 Requires:	Qt6Core >= %{qtver}
 Requires:	Qt6Qml >= %{qtver}
 Requires:	kf6-dirs
+Obsoletes:	kf5-%{kfname} < %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		qt6dir		%{_libdir}/qt6
@@ -52,6 +53,7 @@ Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	cmake >= 3.16
 Requires:	gettext-tools
+Obsoletes:	kf5-%{kfname}-devel < %{version}
 
 %description devel
 Header files for %{kfname} development.
