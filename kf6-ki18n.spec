@@ -3,18 +3,18 @@
 %bcond_with	tests		# build with tests
 # TODO:
 # find_lang needs to be updated (to handle pmap, pmapc, js files)
-%define		kdeframever	6.12
+%define		kdeframever	6.13
 %define		qtver		5.15.2
 %define		kfname		ki18n
 
 Summary:	KDE Gettext-based UI text internationalization
 Name:		kf6-%{kfname}
-Version:	6.12.0
+Version:	6.13.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	b384f083884080e7277578faf4d0e70b
+# Source0-md5:	bcc51ec7d2dfaa68465947e54babf61e
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Concurrent-devel >= %{qtver}
 BuildRequires:	Qt6Core-devel >= %{qtver}
