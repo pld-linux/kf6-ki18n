@@ -3,18 +3,18 @@
 %bcond_with	tests		# build with tests
 # TODO:
 # find_lang needs to be updated (to handle pmap, pmapc, js files)
-%define		kdeframever	6.18
+%define		kdeframever	6.19
 %define		qtver		5.15.2
 %define		kfname		ki18n
 
 Summary:	KDE Gettext-based UI text internationalization
 Name:		kf6-%{kfname}
-Version:	6.18.0
+Version:	6.19.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	50958690ae61b58b4afa3c736dbba228
+# Source0-md5:	b20b0c930049a73250bb5179ea2fbafd
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Concurrent-devel >= %{qtver}
 BuildRequires:	Qt6Core-devel >= %{qtver}
@@ -97,17 +97,17 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README.md
 %ghost %{_libdir}/libKF6I18n.so.6
-%attr(755,root,root) %{_libdir}/libKF6I18n.so.*.*
+%{_libdir}/libKF6I18n.so.*.*
 %ghost %{_libdir}/libKF6I18nLocaleData.so.6
-%attr(755,root,root) %{_libdir}/libKF6I18nLocaleData.so.*.*
+%{_libdir}/libKF6I18nLocaleData.so.*.*
 %ghost %{_libdir}/libKF6I18nQml.so.6
-%attr(755,root,root) %{_libdir}/libKF6I18nQml.so.*.*
+%{_libdir}/libKF6I18nQml.so.*.*
 %attr(755,root,root) %{qt6dir}/plugins/kf6/ktranscript.so
 %{_datadir}/qlogging-categories6/ki18n.categories
 %{_datadir}/qlogging-categories6/ki18n.renamecategories
 %dir %{_libdir}/qt6/qml/org/kde/i18n
 %dir %{_libdir}/qt6/qml/org/kde/i18n/localeData
-%attr(755,root,root) %{_libdir}/qt6/qml/org/kde/i18n/localeData/libki18nlocaledataqmlplugin.so
+%{_libdir}/qt6/qml/org/kde/i18n/localeData/libki18nlocaledataqmlplugin.so
 %{_libdir}/qt6/qml/org/kde/i18n/localeData/qmldir
 %{_libdir}/qt6/qml/org/kde/i18n/localeData/kde-qmlmodule.version
 %{_libdir}/qt6/qml/org/kde/i18n/localeData/ki18nlocaledataqmlplugin.qmltypes
