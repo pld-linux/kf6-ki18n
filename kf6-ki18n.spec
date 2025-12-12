@@ -3,18 +3,18 @@
 %bcond_with	tests		# build with tests
 # TODO:
 # find_lang needs to be updated (to handle pmap, pmapc, js files)
-%define		kdeframever	6.20
+%define		kdeframever	6.21
 %define		qtver		5.15.2
 %define		kfname		ki18n
 
 Summary:	KDE Gettext-based UI text internationalization
 Name:		kf6-%{kfname}
-Version:	6.20.0
+Version:	6.21.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	17a7a148d4a7afd6098da85b1e2cd349
+# Source0-md5:	d815a715bd36a53ec5cb1bf0c90c9dc4
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Concurrent-devel >= %{qtver}
 BuildRequires:	Qt6Core-devel >= %{qtver}
@@ -111,6 +111,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt6/qml/org/kde/i18n/localeData/qmldir
 %{_libdir}/qt6/qml/org/kde/i18n/localeData/kde-qmlmodule.version
 %{_libdir}/qt6/qml/org/kde/i18n/localeData/ki18nlocaledataqmlplugin.qmltypes
+%{_libdir}/qt6/qml/org/kde/ki18n
 
 %files devel
 %defattr(644,root,root,755)
