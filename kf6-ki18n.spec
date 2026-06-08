@@ -47,6 +47,17 @@ and translators, which can help to achieve a higher overall quality of
 source and translated text. This includes argument capturing,
 customizable markup, and translation scripting.
 
+%description -l pl.UTF-8
+KI18n dostarcza możliwości do unaradawiania tekstów w aplikacjach,
+bazując na systemie tłumaczeń GNU Gettext. Otacza standardową
+funkcjonalność gettexta, tak, że programiści i tłumacze mogą korzystać
+ze znajomych narzędzi gettext i cyklu pracy.
+
+KI18n dostarcza też dodatkowych funkcjonalności, zarówno dla
+programistów i jak i tłumaczy, które pozwalają osiągnąć wyższą jakość
+tekstu źródłowego, jak i tłumaczonego. Zawierają one międy innymi
+przechwytywanie argumentów, własne znaczniki i skryptowanie tłumaczeń.
+
 %package devel
 Summary:	Header files for %{kfname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
